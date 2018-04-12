@@ -1,1 +1,32 @@
-@color: 'blue';
+// Instanciate Variables to help with further dev
+@baseColor: yellow;
+@baseFontSize: 15px;
+@bigScreen: 1900px;
+
+// Class used as big var, to declare multiple properties at once
+.varColorBlack {
+  background-color: black;
+}
+
+// Css on Tag / Markup
+body {
+  .varColorBlack;
+}
+
+// Css on Class
+.flex-init {
+  display: flex;
+  &.justify-center {
+    justify-content: center;
+  }
+}
+
+// Css on Id
+#title {
+  font-size: @baseFontSize * 4;
+}
+
+// Media queries
+@media screen and (max-width: @bigScreen) {
+
+}
